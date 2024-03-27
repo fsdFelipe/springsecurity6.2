@@ -22,7 +22,10 @@ public class UsuarioService {
 		}
 
 		Usuario usuario = new Usuario(usuarioDto.email(), usuarioDto.senha());
-
+		if (usuarioDto.perfil() != null) {
+            usuario.addPerfil(usuarioDto.perfil());
+		}
+		
 		return usuarioRepository.save(usuario);
 	}
 

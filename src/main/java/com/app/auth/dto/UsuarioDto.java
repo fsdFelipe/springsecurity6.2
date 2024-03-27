@@ -1,5 +1,7 @@
 package com.app.auth.dto;
 
-public record UsuarioDto(String email, String senha) {
+import com.app.auth.model.enums.Perfil;
+
+public record UsuarioDto(String email, String senha, Perfil perfil) {
 
 }
