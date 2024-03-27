@@ -1,5 +1,5 @@
 package com.app.auth.dto;
 
-public record UsuarioDto(String nome, String senha) {
+public record UsuarioDto(String email, String senha) {
 
 }
